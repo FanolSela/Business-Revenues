@@ -18,6 +18,8 @@ https://app.diagrams.net/#G1YxmVf7RpolzuXEfWPthzYh5V1WrZUAoM
 
 Airtable is returning the data for this base as follows:
 
+https://airtable.com/tblJx3aPZEo8jmpHq/viwBCwdwv59npLM6k?blocks=hide
+
 ```
 
 {
@@ -27,8 +29,7 @@ Airtable is returning the data for this base as follows:
             "fields": {
                 "name": "Joestar Company",
                 "description": "The Joestar Company acquires their wealth from owning real state and is affiliated with the Speedwagon Founation.",
-                "worth": 100000000,
-                "comments": "Mr. Joestar is sure a lot to handle, but he is a funny guy."
+                "worth": 100000000
             },
             "createdTime": "2020-12-03T23:26:35.000Z"
         },
@@ -37,8 +38,7 @@ Airtable is returning the data for this base as follows:
             "fields": {
                 "name": "Tredent Contracting Inc",
                 "description": "Tredent Contracting Inc. is a company that revolves around construction, scaffolding, water-proofing, and sheetmetal. They are one of the biggest cont...",
-                "worth": 75000000,
-                "comments": "Tredent did my roof the other day, now I'm good for the next 10 years."
+                "worth": 75000000
             },
             "createdTime": "2020-12-03T23:26:35.000Z"
         },
@@ -47,14 +47,14 @@ Airtable is returning the data for this base as follows:
             "fields": {
                 "name": "Speedwagon Foundation",
                 "description": "The Speedwagon Foundation was founded by Robert E.O. Speedwagon who discovered oil in America. The foundation also specializes in medical research and...",
-                "worth": 1000000000,
-                "comments": "It's Speedwagon, the best in the world."
+                "worth": 1000000000
             },
             "createdTime": "2020-12-03T23:26:35.000Z"
         }
     ],
     "offset": "rec6WOISYlwKUFJjf"
 }
+
 
 ```
 
