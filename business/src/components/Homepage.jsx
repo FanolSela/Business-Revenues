@@ -1,11 +1,17 @@
 import React from 'react';
+import { useParams } from 'react-router-dom'
 
 const Homepage = (props) => {
+
+  let { id } = useParams()
+
+  const companyItem = props.company.find(company => company.id === id)
+
   return (
     <div>
-      <p>{props.revenue.name}</p>
-      <p>{props.revenue.worth}</p>
-      <p>{props.revenue.description}</p>
+      <h2>{companyItem.fields.name}</h2>
+      <h2>{companyItem.fields.description}</h2>
+      <h2>{companyItem.fields.worth}</h2>
     </div>
   );
 };

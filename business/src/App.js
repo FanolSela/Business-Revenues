@@ -23,9 +23,9 @@ function App() {
   return (
     <div className="App">
       <h1>Business Revenues</h1>
-      {/* <Route exact path="/">   */}
-        <Nav company={company}/>
-      {/* </Route> */}
+        <Route exact path="/"> 
+          <Nav company={company}/>
+        </Route> 
       <Route path="/company/:id">
         <Homepage company={company} setToggleFetch={setToggleFetch}/>
       </Route>
