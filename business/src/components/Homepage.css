@@ -1,5 +1,8 @@
-.app {
-  display: flex;
-  align-content: center;
-  position: relative;
+img {
+  height: 100px;
+}
+
+div.homepage {
+  flex-direction: column;
+  border: 1px solid black;
 }

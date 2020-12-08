@@ -5,7 +5,6 @@ import './App.css';
 import { Route } from "react-router-dom";
 import Nav from "./components/Nav";
 import Homepage from "./components/Homepage";
-import './components/Homepage.css'
 
 function App() {
 
@@ -23,6 +22,8 @@ function App() {
     getCompany();
   }, [toggleFetch])
 
+  console.log(comments)
+  
   return (
     <div className="App">
       <h1>Business Revenues</h1>

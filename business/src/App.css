@@ -28,6 +28,13 @@
   color: #61dafb;
 }
 
+body {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 nav {
   display: flex;
   flex-direction: column;
