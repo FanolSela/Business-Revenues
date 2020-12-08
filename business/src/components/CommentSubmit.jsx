@@ -1,14 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-const CommentSubmit = () => {
-
-
+const CommentSubmit = (props) => {
+  
+  const { handleSubmit } = props;
+  const [comment, setComment] = useState('');
 
   return (
-    <Comment OnSubmit={handleSubmit}>
-      
-      <button type="submit">Submit Comment</button>
-    </Comment>
+    <div>
+      <div className="comment-header">
+        <div className="comment-body">
+          <div name="comment" className="comment-form" placeholder="Add a comment"
+            onChange={event => setComment(event.target.value)} value={comment}>
+          </div>
+        </div>
+      </div>
+    <div>
+          <button className="comment-button" onClick={event => {
+            handleSubmit(comment);
+            setComment('');
+          }}>Comment</button>
+    </div>
+  </div>
   );
 };
 

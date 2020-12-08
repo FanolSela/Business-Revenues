@@ -1,21 +1,24 @@
 import axios from "axios";
 import React, { useState, useEffect } from "react";
-import { baseURL, config } from "./services";
+import { companyURL, commentURL, config } from "./services";
 import './App.css';
 import { Route } from "react-router-dom";
 import Nav from "./components/Nav";
 import Homepage from "./components/Homepage";
+import './components/Homepage.css'
 
 function App() {
 
   const [company, setCompany] = useState([]);
+  const [comments, setComments] = useState([]);
   const [toggleFetch, setToggleFetch] = useState(false);
   
   useEffect(() => {
     const getCompany = async () => {
-      const response = await axios.get(baseURL, config);
-      setCompany(response.data.records);
-      console.log(response)
+      const companyResponse = await axios.get(companyURL, config);
+      setCompany(companyResponse.data.records);
+      const commentResponse = await axios.get(commentURL, config);
+      setComments(commentResponse.data.records);
     };
     getCompany();
   }, [toggleFetch])
@@ -27,7 +30,7 @@ function App() {
           <Nav company={company}/>
         </Route> 
       <Route path="/company/:id">
-        <Homepage company={company} setToggleFetch={setToggleFetch}/>
+        <Homepage company={company} comments={comments} setToggleFetch={setToggleFetch}/>
       </Route>
     </div>
   );
