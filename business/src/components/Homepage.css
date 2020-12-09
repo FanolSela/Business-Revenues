@@ -1,8 +1,11 @@
 img {
-  height: 100px;
+  height: 200px;
 }
 
 div.homepage {
   flex-direction: column;
-  border: 1px solid black;
+  border: 5px;
+  border-radius: 5px;
+
 }
+

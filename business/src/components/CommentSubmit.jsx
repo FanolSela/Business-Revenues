@@ -12,6 +12,9 @@ const CommentSubmit = (props) => {
           <div name="comment" className="comment-form" placeholder="Add a comment"
             onChange={event => setComment(event.target.value)} value={comment}>
           </div>
+          <form input>
+
+          </form>
         </div>
       </div>
     <div>

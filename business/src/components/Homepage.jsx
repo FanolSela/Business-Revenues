@@ -18,7 +18,7 @@ const Homepage = (props) => {
       <img src={`${companyItem.fields.Logo}`} />
       <h3>{companyItem.fields.description}</h3>
       <h4>{companyItem.fields.worth}</h4>
-      <div className="CommentSection">
+      <div className="comment-section">
         {/* This is where the comments will be at */} 
       </div>
       {props.comments.map((comment) =>(
