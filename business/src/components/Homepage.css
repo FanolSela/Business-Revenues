@@ -1,11 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 img {
-  height: 200px;
+  height: 250px;
 }
 
 div.homepage {
+  font-family: 'Roboto', sans-serif;
   flex-direction: column;
-  border: 5px;
-  border-radius: 5px;
-
 }
+
+
+
 

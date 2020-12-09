@@ -25,7 +25,7 @@ function App() {
   console.log(comments)
   
   return (
-    <div className="App">
+    <div className={"App"} > 
       <h1>Business Revenues</h1>
         <Route exact path="/"> 
           <Nav company={company}/>
