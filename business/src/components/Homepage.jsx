@@ -32,7 +32,9 @@ const Homepage = (props) => {
       <img src={`${companyItem.fields.Logo}`} />
       <h3>{companyItem.fields.description}</h3>
       <h4>{companyItem.fields.worth}</h4>
-      {/* <Charts /> */}
+      <div className="chart">
+        <Charts data={companyItem.fields.chartData.split(', ')}/>
+      </div>
       <div className="comment-section">
         {/* This is where the comments will be at */} 
       </div>

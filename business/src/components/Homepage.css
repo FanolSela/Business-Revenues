@@ -7,8 +7,32 @@ img {
 div.homepage {
   font-family: 'Roboto', sans-serif;
   flex-direction: column;
+  text-align: center;
 }
 
+.chart {
+  color: lightgray;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1000px) {
+
+  div.homepage {
+    flex-direction: column;
+  }
+
+  .chart {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
 
 
+}
 

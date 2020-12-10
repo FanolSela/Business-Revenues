@@ -10,17 +10,6 @@
   flex-wrap: wrap;
 }
 
-.comment-section {
-  /* background-color: lightgray;
-  margin: 5px;
-  padding: 5px;
-  text-align: center;
-  margin-left: 39%;
-  max-width: 300px;
-  display: flex;
-  flex-wrap: wrap; */
-}
-
 .comment-header {
   border: 1px solid black;
   margin: 5px;
@@ -58,6 +47,11 @@
   font-size: 15px;
 }
 
-.comment-body input {
-  border: 1px solid black;
+@media screen and (max-width: 1000px) {
+
+  .comment-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
 }
