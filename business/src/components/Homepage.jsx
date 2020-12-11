@@ -29,7 +29,7 @@ const Homepage = (props) => {
   return (
     <div className="homepage">
       <h2>{companyItem.fields.name}</h2>
-      <img src={`${companyItem.fields.Logo}`} />
+      <img src={`${companyItem.fields.Logo}`}  alt="logo"/>
       <h3>{companyItem.fields.description}</h3>
       <h4>{companyItem.fields.worth}</h4>
       <div className="chart">
