@@ -5,6 +5,7 @@ import './App.css';
 import { Route } from "react-router-dom";
 import Nav from "./components/Nav";
 import Homepage from "./components/Homepage";
+import Changemode from "./components/Changemode";
 
 function App() {
 
@@ -33,6 +34,7 @@ function App() {
       <Route path="/company/:id">
         <Homepage company={company} comments={comments} setToggleFetch={setToggleFetch}/>
       </Route>
+      <Changemode />
     </div>
   );
 }

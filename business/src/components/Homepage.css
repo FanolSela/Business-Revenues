@@ -10,6 +10,10 @@ div.homepage {
   text-align: center;
 }
 
+.button {
+  
+}
+
 .chart {
   color: lightgray;
   display: flex;
@@ -19,6 +23,8 @@ div.homepage {
   width: 90vw;
   margin: 0 auto;
 }
+
+
 
 @media screen and (max-width: 1000px) {
 
@@ -32,7 +38,6 @@ div.homepage {
     flex-direction: column;
     text-align: center;
   }
-
 
 }
 
